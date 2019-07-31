@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import endereco from 'src/app/home/home.page.ts'
+import Endereco from '../domain/Endereco'
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -12,7 +12,7 @@ export class HomePage {
   enderecos:Array<Object> = []
 
   ionViewDidEnter(){
-let endereco1= new endereco ()
+let endereco1= new Endereco ()
     endereco1.rua ='Rua Cambara'
     endereco1.bairro = 'Jardim Miray'
     endereco1.cidade = 'Itaquaquecetuba'
